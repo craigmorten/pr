@@ -1,0 +1,18 @@
+package: github.com/craigmorten/pr
+import:
+- package: github.com/google/go-github
+  subpackages:
+  - github
+- package: github.com/google/go-querystring
+  subpackages:
+  - query
+- package: golang.org/x/oauth2
+testImport:
+- package: github.com/stretchr/testify
+  version: ^1.1.4
+  subpackages:
+  - assert
+- package: github.com/davecgh/go-spew
+  version: ^1.1.0
+  subpackages:
+  - spew
